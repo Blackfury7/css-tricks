@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website | Vanilla Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#"  class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+            
+        </ul>
+    </header>  
+    <section>
+        <img src="images/stars.png" id="stars" >
+        <img src="images/moon.png" id="moon" >
+        <img src="images/mountains_behind.png" id="mountains_behind" >
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="images/mountains_front.png" id="mountains_front" >
+
+    </section> 
+    <div class="sec" id="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam, molestias, quam exercitationem laudantium nulla minima delectus, unde id asperiores reprehenderit eligendi sunt officiis deserunt voluptatibus impedit nobis. Eveniet, itaque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident natus ipsum nihil ad repellat corporis culpa temporibus molestiae nam facere a minus, ullam doloremque consequatur aliquam praesentium qui voluptate quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius beatae aliquid earum. Atque tempora, delectus ad quaerat rem quod inventore quos animi, culpa modi reprehenderit sapiente qui fuga! Accusantium.
+            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam, molestias, quam exercitationem laudantium nulla minima delectus, unde id asperiores reprehenderit eligendi sunt officiis deserunt voluptatibus impedit nobis. Eveniet, itaque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident natus ipsum nihil ad repellat corporis culpa temporibus molestiae nam facere a minus, ullam doloremque consequatur aliquam praesentium qui voluptate quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius beatae aliquid earum. Atque tempora, delectus ad quaerat rem quod inventore quos animi, culpa modi reprehenderit sapiente qui fuga! Accusantium.
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam, molestias, quam exercitationem laudantium nulla minima delectus, unde id asperiores reprehenderit eligendi sunt officiis deserunt voluptatibus impedit nobis. Eveniet, itaque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident natus ipsum nihil ad repellat corporis culpa temporibus molestiae nam facere a minus, ullam doloremque consequatur aliquam praesentium qui voluptate quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius beatae aliquid earum. Atque tempora, delectus ad quaerat rem quod inventore quos animi, culpa modi reprehenderit sapiente qui fuga! Accusantium.<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam, molestias, quam exercitationem laudantium nulla minima delectus, unde id asperiores reprehenderit eligendi sunt officiis deserunt voluptatibus impedit nobis. Eveniet, itaque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident natus ipsum nihil ad repellat corporis culpa temporibus molestiae nam facere a minus, ullam doloremque consequatur aliquam praesentium qui voluptate quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius beatae aliquid earum. Atque tempora, delectus ad quaerat rem quod inventore quos animi, culpa modi reprehenderit sapiente qui fuga! Accusantium.
+            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam, molestias, quam exercitationem laudantium nulla minima delectus, unde id asperiores reprehenderit eligendi sunt officiis deserunt voluptatibus impedit nobis. Eveniet, itaque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident natus ipsum nihil ad repellat corporis culpa temporibus molestiae nam facere a minus, ullam doloremque consequatur aliquam praesentium qui voluptate quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius beatae aliquid earum. Atque tempora, delectus ad quaerat rem quod inventore quos animi, culpa modi reprehenderit sapiente qui fuga! Accusantium.
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam, molestias, quam exercitationem laudantium nulla minima delectus, unde id asperiores reprehenderit eligendi sunt officiis deserunt voluptatibus impedit nobis. Eveniet, itaque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident natus ipsum nihil ad repellat corporis culpa temporibus molestiae nam facere a minus, ullam doloremque consequatur aliquam praesentium qui voluptate quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius beatae aliquid earum. Atque tempora, delectus ad quaerat rem quod inventore quos animi, culpa modi reprehenderit sapiente qui fuga! Accusantium.
+
+        </p>
+    </div> 
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 + 'px';
+            moon.style.top = value*1.05 + 'px';
+            mountains_behind.style.top = value*0.5 + 'px';
+            mountains_front.style.top = value*0 + 'px';
+            text.style.marginRight = value*4 + 'px';
+            text.style.marginTop = value*1.5 + 'px';
+            btn.style.marginTop = value*1.5 + 'px';
+            header.style.top = value*0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
