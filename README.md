@@ -1,5 +1,5 @@
 # css-tricks
-cool css work
+cool css & javascript work
 
 
 1. [Awesome fullpage scroll effect](https://blackfury7.github.io/css-tricks/awesome-fullpage-scroll-effect/)
