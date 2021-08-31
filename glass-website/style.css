@@ -155,7 +155,7 @@ main{
     position: relative;
     overflow: hidden;
 }
-
+/* the right side of the progress bar */
 .progress::after{
     content: "";
     width: 100%;
@@ -175,5 +175,6 @@ main{
     font-weight: bold;
     background: linear-gradient(to right top,#65dfc9, #6cdbeb);
     -webkit-background-clip: text;
+    /* To add the linear gradient to the text */
     -webkit-text-fill-color: transparent;
 }
