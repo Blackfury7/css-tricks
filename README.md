@@ -6,3 +6,5 @@ cool css & javascript work
 
 
 2. [Parallax Scrolling Website](https://blackfury7.github.io/css-tricks/parallax-scrolling-website/)
+
+3. [Glassmorphism Webpage](https://blackfury7.github.io/css-tricks/glass-website/)
