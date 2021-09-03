@@ -31,34 +31,55 @@ body {
     margin-left: 1rem;
 }
 
-.main-nav ul {
+.main-nav ul, .footer-nav ul {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.main-nav a {
+.main-nav a, .footer-nav a {
     color: inherit;
     text-decoration: none;
     padding: 1rem;
 }
 
-.main-nav a:hover {
+.main-nav a:hover, 
+.footer-nav a:hover {
     color: #adadad;
 }
 
-.main-header {
+.main-header, .main-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.main-header {
     height: 140px;
+}
+
+.main-footer {
+    height: 70px;
+    background-color: #202027;
+    font-weight: bold;
+}
+
+.social-link img {
+    width: 1em;
+    margin-right: .25rem;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
+    flex-grow: 1;
 }
 
 
