@@ -35,6 +35,5 @@ cool css & javascript work
     [Click me to see code](https://github.com/Blackfury7/css-tricks/soundwave-website/)
     
     
-    
-
+    ![soundwave](https://user-images.githubusercontent.com/55788710/132251993-f079f9a0-c615-4370-bcd7-b7240bd1c990.png)
 
